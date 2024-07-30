@@ -1,0 +1,166 @@
+        * {
+            box-sizing: border-box;
+            font-family: 'Dosis',serif;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            z-index:1
+            
+
+        }
+        #carousel{
+            margin-top: 4.7rem;
+        }
+        .logo{
+            font-family: 'Dancing Script', cursive !important; 
+            font-size: 2rem;
+            color: #ffc107;
+        }
+        /* #carousel img{
+        width: 100%;
+        height: 35rem;
+    } */
+        .Product-details{
+            position: relative;
+            bottom: 17rem;
+            left: 8rem;
+        }
+
+        .Jordan {
+            position: relative;
+            top: -400px;
+            left: 850px;
+
+        }
+        .hero{
+            margin: 6rem auto;
+            border-radius: 0.5rem;
+            width: 66%;
+        }
+        .hero h1{
+            /* padding: 0 2.5rem; */
+            font-size: 2.25rem;
+
+
+        }
+        .hero p{
+            padding: 0 3rem;
+            font-size: 1.12rem;
+        }
+        .hero a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+        }
+        .Product-details h1,
+        .Jordan h1 {
+            font-size: 1.5rem;
+        }
+        .Product-details h4,
+        .Jordan h4 {
+            font-size: 16px;
+            color: rgb(159, 163, 163);
+            margin-top: 0.5rem;
+
+        }
+        .carousel-control-prev, .carousel-control-next{
+            top:27%;
+            width: 5%;
+            height: 2rem;
+        }
+        #support{
+            height: 10rem;
+        }
+        @media(max-width:850px){
+            .Product-details{
+            left: 5rem;
+            }
+        }
+        @media(max-width:748px){
+            .Product-details{
+            bottom: 14rem;
+            }
+        }
+        @media(max-width:748px){
+            .Product-details{
+            left: 1rem;
+            }
+            .Product-details h1{
+            font-size: 1.2rem;
+            }
+            .Product-details h4{
+            font-size: 0.8rem;
+            }
+        }
+        @media(max-width:610px){
+            .Product-details{
+            bottom: 12rem;
+            }
+        }
+        @media(max-width:534px){
+            .Product-details h1{
+            font-size: 1.1rem;
+            }
+            .Product-details h4{
+            font-size: 0.6rem;
+            }
+            .shop{
+                font-size: .7rem;
+                /* padding: 1px 2px; */
+            }
+        }
+        @media(max-width:500px){
+            .Product-details{
+                display: none;
+            }
+        }
+        @media(max-width:400px){
+            .hero p{
+            padding: 0 0;
+        }
+        }
+
+
+        .shop {
+            border-radius: 20px;
+            margin-top: 1rem;
+        }
+        .shop:hover,footer i:hover{
+            transform: scale(1.3);
+            transition: 0.4s;
+        }
+
+        .card-text {
+            font-size: 2rem;
+            color: rgb(159, 159, 155);
+        }
+        i{
+            margin: auto;
+        }
+        #support .survice{
+            margin-left: 1rem;
+        }
+        #support .survice h2{
+            font-size: 1.3rem;
+            margin: 0;
+            /* margin-left: 0.5rem; */
+        }
+        
+        #carousel span{
+            color: black;
+        }
+        .icon {
+            display: flex;
+            align-items: center;
+        }
+        .icon h1{
+            font-size: 1.3rem;
+            margin-left: 0.5rem;
+        }
+        .line {
+            width: 80%; /* Adjust the width as needed */
+            height: 1px; /* Adjust the height as needed */
+            background-color: #000; /* Adjust the line color as needed */
+            margin-left: 0.5rem;
+        }

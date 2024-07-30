@@ -4,121 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-commerce Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: 'Dosis',serif;
-        }
-        
-        .logo{
-            font-family: 'Dancing Script', cursive !important; 
-            font-size: 2rem;
-            color: #ffc107;
-        }
-        /* #carousel img{
-        width: 100%;
-        height: 35rem;
-    } */
-        .Product-details,
-        .Jordan {
-            position: relative;
-            top: -380px;
-            left: 120px;
-        }
-
-        .Jordan {
-            position: relative;
-            top: -400px;
-            left: 850px;
-
-        }
-        .hero{
-            margin-bottom: 6rem;
-            border-radius: 0.5rem;
-            width: 32rem;
-        }
-        .hero h1{
-            /* padding: 0 2.5rem; */
-            font-size: 2.25rem;
-
-
-        }
-        .hero p{
-            padding: 0 3rem;
-            font-size: 1.12rem;
-        }
-        .hero a{
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 0.5rem 1rem;
-        }
-        .Product-details h1,
-        .Jordan h1 {
-            font-size: 25px;
-        }
-
-        .Product-details h4,
-        .Jordan h4 {
-            font-size: 16px;
-            color: rgb(159, 163, 163);
-            margin-top: 0.5rem;
-
-        }
-
-        .shop {
-            border-radius: 20px;
-            margin-top: 1rem;
-        }
-        .shop:hover,footer i:hover{
-            transform: scale(1.3);
-            transition: 0.4s;
-        }
-
-        .card-text {
-            font-size: 2rem;
-            color: rgb(159, 159, 155);
-        }
-        i{
-            margin: auto;
-        }
-        #support .survice{
-            margin-left: 1rem;
-        }
-        #support .survice h2{
-            font-size: 1.3rem;
-            margin: 0;
-            /* margin-left: 0.5rem; */
-        }
-        
-        #carousel span{
-            color: black;
-        }
-        .icon {
-            display: flex;
-            align-items: center;
-        }
-        .icon h1{
-            font-size: 1.3rem;
-            margin-left: 0.5rem;
-        }
-        .line {
-            width: 80%; /* Adjust the width as needed */
-            height: 1px; /* Adjust the height as needed */
-            background-color: #000; /* Adjust the line color as needed */
-            margin-left: 0.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-commerce Landing Page</title>
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid p-0 ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="/iProBootstrap/">Quickshop</a>
@@ -130,16 +27,16 @@
                 <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
                         <li class="nav-item mx-4">
-                            <a class="nav-link active" aria-current="page" href="">Home</a>
+                            <a class="nav-link" aria-current="page" href="#carousel">Home</a>
                         </li>
                         <li class="nav-item mx-4">
                             <a class="nav-link" href="#prod">Product</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="nav-link" href="">About</a>
+                            <a class="nav-link" href="#support">Support</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                     
@@ -149,27 +46,27 @@
         </nav>
     </header>
    
-    <section id="carousel" class="container-fluid">
+    <section id="carousel" class="container-fluid active">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="n.jpeg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="img/n.jpeg" class="d-block w-100 img-fluid" alt="...">
                     <div class="Product-details">
                         <h1>Nike Airmax 2017 <br> Men's Running Shoes</h1>
                         <h4>UPTO 50% OFF</h4>
                         <button class=" shop btn btn-warning">Shop Now</button>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="2.jpeg" class="d-block w-100 img-fluid" alt="...">
-                    <div class="Jordan">
-                        <h1>Air Jordan 1 <br> Low FlyEase Men's Shoes</h1>
+                <div class="carousel-item ">
+                    <img src="img/2.jpeg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="Product-details">
+                        <h1>Air Jordan 1 <br> Low FlyEase <br> Men's Shoes</h1>
                         <h4>UPTO 40% OFF</h4>
                         <button class=" shop btn btn-warning">Shop Now</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="4.jpeg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="img/4.jpeg" class="d-block w-100 img-fluid" alt="...">
                     <div class="Product-details">
                         <h1>Kalvin Klein <br>Jeans </h1>
                         <h4>UPTO 60% OFF</h4>
@@ -206,7 +103,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="card col-3 p-0 my-3 mx-3" style="width: 16rem;">
-                <img src="nik5.jpeg" class="card-img-top" alt="...">
+                <img src="img/nik5.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nike Vomero 16</h5>
                     <p class="card-text">$52.9</p>
@@ -214,7 +111,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="nik3.jpeg" class="card-img-top" alt="...">
+                <img src="img/nik3.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nike Spark</h5>
                     <p class="card-text">$55.9</p>
@@ -222,7 +119,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="nik2.jpeg" class="card-img-top" alt="...">
+                <img src="img/nik2.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nike Dunk High</h5>
                     <p class="card-text">$45.9</p>
@@ -230,7 +127,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="nik4.jpeg" class="card-img-top" alt="...">
+                <img src="img/nik4.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nike Air Max</h5>
                     <p class="card-text">$58.9</p>
@@ -247,7 +144,7 @@
 
         <div class="row justify-content-center">
             <div class="card col-3 p-0 my-3 mx-3" style="width: 16rem;">
-                <img src="mani.jpeg" class="card-img-top" alt="...">
+                <img src="img/mani.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Mani Moisture</h5>
                     <p class="card-text">$69.9</p>
@@ -255,7 +152,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="metze.jpeg" class="card-img-top" alt="...">
+                <img src="img/metze.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Meet Mitzie - Zero-Living</h5>
                     <p class="card-text">$49.9</p>
@@ -263,7 +160,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="coco.jpeg" class="card-img-top" alt="...">
+                <img src="img/coco.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">COCO Noir Chanel</h5>
                     <p class="card-text">$45.9</p>
@@ -271,7 +168,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="Chan.jpeg" class="card-img-top" alt="...">
+                <img src="img/Chan.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">N'5 Chanel Eau De Parsum</h5>
                     <p class="card-text">$65.9</p>
@@ -288,7 +185,7 @@
 
         <div class="row justify-content-center">
             <div class="card col-3 p-0 my-3 mx-3" style="width: 16rem;">
-                <img src="Apple.jpeg" class="card-img-top" alt="...">
+                <img src="img/Apple.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Apple Watch Series 1</h5>
                     <p class="card-text">$89.9</p>
@@ -296,7 +193,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="pods.jpeg" class="card-img-top" alt="...">
+                <img src="img/pods.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Airpods Pro</h5>
                     <p class="card-text">$53.9</p>
@@ -304,7 +201,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="mouse.jpeg" class="card-img-top" alt="...">
+                <img src="img/mouse.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Gaming Wireless Mouse</h5>
                     <p class="card-text">$25.9</p>
@@ -312,7 +209,7 @@
                 </div>
             </div>
             <div class="card col-3 p-0 mx-3 my-3" style="width: 16rem;">
-                <img src="headset.jpeg" class="card-img-top" alt="...">
+                <img src="img/headset.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Apple Airpods Max Wireless Headphones</h5>
                     <p class="card-text">$33.9</p>
@@ -322,7 +219,7 @@
         </div>
     </section>
 
-    <section id="support" class="container d-sm-flex text-center justify-content-between my-5">
+    <section id="support" class="container d-sm-flex align-items-sm-center text-center justify-content-between my-5">
         <div class="d-lg-flex d-block sm-mb-5">
 
             <i class="fa-solid fa-truck fa-lg border border-3 border-warning rounded-circle p-4 text-warning"></i>
@@ -351,8 +248,28 @@
         </div>   
     </section>
 
+    <section class="container my-5" id="contact">
+        <h1 class="my-3">Contact Us</h1>
+        <form class="my-5">
+          <div class="my-4">
+            <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Name">
+          </div>
+          <div class="my-4">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Email">
+          </div>
+          <div class="my-4">
+            <input type="text" class="form-control " id="exampleInputSubject" aria-describedby="subjectHelp"
+              placeholder="Subject">
+          </div>
+          <div class="my-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning my-5">Submit</button>
+        </form>
+    </section>
     <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-        <p>
+        <p class="px-2">
           Copyright © 2017 www.example.com - All rights reserved
         </p>
         <div class="container my-5">
